@@ -1,0 +1,5 @@
+payment_type,sum_payments,avg_payment_istallments
+credit_card,12542084.2,3.5
+boleto,2869361.3,1
+voucher,379436.9,1
+debit_card,217989.8,1
