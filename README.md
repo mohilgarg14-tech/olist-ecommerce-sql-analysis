@@ -237,7 +237,7 @@ would improve buyer experience without reducing seller diversity.
 
 **Mohil Garg**  
 B.Tech Mechanical Engineering · Delhi Technological University  
-📎 [LinkedIn](https://linkedin.com/in/your-link-here) · 
+📎 [LinkedIn](www.linkedin.com/in/mohil-g-28825422b) · 
 📁 [GitHub](https://github.com/mohilgarg14-tech)
 
 ---
