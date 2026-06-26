@@ -4,7 +4,6 @@
 
 ![SQL](https://img.shields.io/badge/SQL-BigQuery-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-pandas-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PowerBI](https://img.shields.io/badge/Power_BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge)
 
@@ -115,21 +114,21 @@ olist_orders ──────────────┬──── olist_ord
 - **Executive KPI Overview** — Total GMV (R$16M), 98K orders, 
   MoM revenue growth, repeat purchase rate (2.61%)
 
-- **Delivery & Quality Operations** — Delay vs review score 
-  correlation, worst sellers by delay and bad reviews, 
-  revenue at risk from delayed orders (R$1.35M)
-
 - **Customer Funnel & Retention** — Repeat purchase rate (2.61%), 
   CLV distribution, AOV trend over time (avg R$163)
+
+- **Product Category Intelligence** — Price elasticity scatter, 
+  top categories by revenue and orders, freight value analysis
 
 - **Geographic Performance** — Revenue, order volume, avg delivery 
   delay and review scores mapped across all 27 Brazilian states
 
+- **Delivery & Quality Operations** — Delay vs review score 
+  correlation, worst sellers by delay and bad reviews, 
+  revenue at risk from delayed orders (R$1.35M)
+
 - **Seller Health & Risk Matrix** — 2x2 scatter (revenue vs delay), 
   seller concentration by state, worst sellers by revenue and reviews
-
-- **Product Category Intelligence** — Price elasticity scatter, 
-  top categories by revenue and orders, freight value analysis
 
 ### Tableau Public
 🔗 **[View Live Dashboards](https://public.tableau.com/app/profile/mohil.garg/vizzes)**
