@@ -110,14 +110,29 @@ olist_orders ──────────────┬──── olist_ord
 
 ## Dashboards
 
-### Power BI — 3 Pages *(In Progress)*
-- **Executive KPI Overview** — GMV trend, on-time delivery rate, MoM growth
-- **Delivery Operations** — delay heatmap by state corridor, worst seller ranking
-- **Customer & Category Intelligence** — RFM segments, review distribution, cohort grid
+### Tableau — 6 Interactive Dashboards
 
-### Tableau Public *(In Progress)*
- **Dashboard link will be added here on completion**
+- **Executive KPI Overview** — Total GMV (R$16M), 98K orders, 
+  MoM revenue growth, repeat purchase rate (2.61%)
 
+- **Delivery & Quality Operations** — Delay vs review score 
+  correlation, worst sellers by delay and bad reviews, 
+  revenue at risk from delayed orders (R$1.35M)
+
+- **Customer Funnel & Retention** — Repeat purchase rate (2.61%), 
+  CLV distribution, AOV trend over time (avg R$163)
+
+- **Geographic Performance** — Revenue, order volume, avg delivery 
+  delay and review scores mapped across all 27 Brazilian states
+
+- **Seller Health & Risk Matrix** — 2x2 scatter (revenue vs delay), 
+  seller concentration by state, worst sellers by revenue and reviews
+
+- **Product Category Intelligence** — Price elasticity scatter, 
+  top categories by revenue and orders, freight value analysis
+
+### Tableau Public
+🔗 **[View Live Dashboards](https://public.tableau.com/app/profile/mohil.garg/vizzes)**
 ---
 
 ## Python EDA *(In Progress)*
