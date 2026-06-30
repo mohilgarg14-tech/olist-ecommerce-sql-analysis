@@ -130,7 +130,7 @@ olist_orders ──────────────┬──── olist_ord
   seller concentration by state, worst sellers by revenue and reviews
 
 ### Tableau Public
-🔗 **[View Live Dashboards](https://public.tableau.com/app/profile/mohil.garg/vizzes)**
+**[View Live Dashboards](https://public.tableau.com/app/profile/mohil.garg/vizzes)**
 ---
 
 ## Python EDA
