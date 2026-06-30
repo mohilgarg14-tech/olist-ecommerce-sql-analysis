@@ -65,40 +65,40 @@ olist_orders ──────────────┬──── olist_ord
 ### Revenue & Growth (Q01–Q05)
 
 | Query | Business Question | Techniques Used |
-|---|---|---|
-| Q01 | Monthly GMV trend + MoM growth % | `GROUP BY` month · `LAG()` window function |
-| Q02 | Revenue by state — top 10 ranking | Multi-table `JOIN` · `RANK() OVER` |
-| Q03 | Top 10 product categories by revenue | `JOIN` · `SUM()` · contribution % via `SUM OVER()` |
-| Q04 | Average order value by state & month | `GROUP BY` · `HAVING COUNT > 100` noise filter |
-| Q05 | Payment type distribution & installments | `GROUP BY` · `AVG()` · `COUNT()` |
+|---|---|
+| Q01 | Monthly GMV trend + MoM growth % | 
+| Q02 | Revenue by state — top 10 ranking |
+| Q03 | Top 10 product categories by revenue |
+| Q04 | Average order value by state & month | 
+| Q05 | Payment type distribution & installments | 
 
 ### Delivery Performance (Q06–Q10)
 
-| Query | Business Question | Techniques Used |
-|---|---|---|
-| Q06 | On-time delivery rate overall & by month | `CASE WHEN` · `AVG()` · date comparison |
-| Q07 | Top 10 worst sellers by average delay | `JOIN` · `HAVING` · `ORDER BY` delay DESC |
-| Q08 | Delay heatmap: seller state → customer state | Multi-table `JOIN` · `AVG()` GROUP BY corridor |
-| Q09 | Carrier handoff speed by seller | `DATE_DIFF` · `RANK() OVER` |
-| Q10 | Delivery time percentiles by category | `NTILE(4) OVER PARTITION BY` category |
+| Query | Business Question | 
+|---|---|
+| Q06 | On-time delivery rate overall & by month | 
+| Q07 | Top 10 worst sellers by average delay | 
+| Q08 | Delay heatmap: seller state → customer state | 
+| Q09 | Carrier handoff speed by seller | 
+| Q10 | Delivery time percentiles by category | 
 
 ### Customer & Review Intelligence (Q11–Q15)
 
-| Query | Business Question | Techniques Used |
-|---|---|---|
-| Q11 | Repeat purchase rate | `CTE` · `COUNT DISTINCT` · filter |
-| Q12 | RFM base table — recency, frequency, monetary | `CTE` · `MAX` · `COUNT` · `SUM` per customer |
-| Q13 | Cohort retention matrix | Double `CTE` · `DATE_DIFF` months since cohort |
-| Q14 | Review score distribution by category & seller | `AVG` · % bad reviews · `ORDER BY` risk |
-| Q15 | Review response lag vs. score correlation | `DATE_DIFF` · `GROUP BY` review score |
+| Query | Business Question | 
+|---|---|
+| Q11 | Repeat purchase rate | 
+| Q12 | RFM base table — recency, frequency, monetary |
+| Q13 | Cohort retention matrix | 
+| Q14 | Review score distribution by category & seller | 
+| Q15 | Review response lag vs. score correlation | 
 
 ### Advanced — Window Functions (Q16–Q18)
 
-| Query | Business Question | Techniques Used |
-|---|---|---|
-| Q16 | Running total GMV by month | `SUM() OVER (ROWS UNBOUNDED PRECEDING)` |
-| Q17 | Seller revenue rank with percentile tier | `NTILE(4) OVER` · multi-metric `JOIN` |
-| **Q18** | **Top delivery bottlenecks — composite score** | **3-CTE weighted rank · composite score formula** |
+| Query | Business Question | 
+|---|---|
+| Q16 | Running total GMV by month | 
+| Q17 | Seller revenue rank with percentile tier | 
+| **Q18** | **Top delivery bottlenecks — composite score** | 
 
 > **Q18 is the hero query** — combines seller delay rank, volume rank, and review score
 > into a single weighted composite to surface the highest-risk seller corridors.
