@@ -1,11 +1,10 @@
-# Olist E-Commerce — End-to-End SQL & Business Intelligence Analysis
+# Olist E-Commerce — End-to-End SQL, Business Intelligence, Python Exploratory Data Analysis
 
 <div align="center">
 
 ![SQL](https://img.shields.io/badge/SQL-BigQuery-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-pandas-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Tableau](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-2ea44f?style=for-the-badge)
 
 **18 SQL queries · 9 relational tables · 99,441 orders · Google BigQuery**
 
@@ -134,9 +133,9 @@ olist_orders ──────────────┬──── olist_ord
 🔗 **[View Live Dashboards](https://public.tableau.com/app/profile/mohil.garg/vizzes)**
 ---
 
-## Python EDA *(In Progress)*
+## Python EDA
 
-Planned analyses in `notebooks/olist_eda.ipynb`:
+Planned analyses in `notebooks/olist_ecommerce_eda.ipynb`:
 - Delivery delay distribution (histogram + KDE)
 - Monthly GMV with 3-month rolling average
 - RFM customer segmentation (Bronze → Platinum)
